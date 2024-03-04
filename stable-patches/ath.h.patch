@@ -1,0 +1,14 @@
+diff --git a/src/ath.h b/src/ath.h
+index 8243864a..5ba7ad8c 100644
+--- a/src/ath.h
++++ b/src/ath.h
+@@ -34,6 +34,9 @@
+ #else /*!HAVE_W32_SYSTEM*/
+ # ifdef HAVE_POLL_H
+ #  include <poll.h>
++#  if defined (__MVS__) && defined (HAVE_SYS_TIME_H)
++#    include <sys/time.h>
++#  endif
+ # else
+ #  ifdef HAVE_SYS_SELECT_H
+ #   include <sys/select.h>

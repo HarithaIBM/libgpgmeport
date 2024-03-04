@@ -1,0 +1,15 @@
+diff --git a/m4/libtool.m4 b/m4/libtool.m4
+index c6f534e9..0d1f7d5c 100644
+--- a/m4/libtool.m4
++++ b/m4/libtool.m4
+@@ -3223,6 +3223,10 @@ beos*)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
++openedition)
++  lt_cv_deplibs_check_method=pass_all
++  ;;
++
+ bsdi[[45]]*)
+   lt_cv_deplibs_check_method='file_magic ELF [[0-9]][[0-9]]*-bit [[ML]]SB (shared object|dynamic lib)'
+   lt_cv_file_magic_cmd='/usr/bin/file -L'
